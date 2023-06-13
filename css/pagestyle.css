@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Slackside+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Meddon&family=Petit+Formal+Script&family=Slackside+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Diphylleia&family=Meddon&family=Montserrat+Alternates:wght@500&family=Petit+Formal+Script&family=Slackside+One&display=swap');
 
 * {
 	margin: 0px;
@@ -19,6 +19,7 @@ main {
 	width: 100%;
 	min-height: 100vh;
 	background: #eee;
+	overflow: hidden;
 }
 
 header {
@@ -27,10 +28,10 @@ header {
 }
 
 header h1 {
-	font-size: 100px;
-	font-family: 'Slackside One', cursive;
+	font-size: 80px;
+	font-family: 'Meddon', cursive;
 	color: #222;
-	margin-top: 0px;
+	margin-top: 70px;
 	margin-left: center;
 }
 
@@ -45,18 +46,17 @@ header h1 {
 
 .options li a {
 	display: block;
-	font: medium 15px/1 'arial';
+	font: bold 15px;
+	font-family: 'Montserrat Alternates', sans-serif;
 	color: #555;
-	padding: 20px 40px;
-	margin-top: 10px;
+	padding: 5px 30px;
+	margin-top: 0px;
 	transition: all 0.5s;
 }
 
 .options li a:hover {
 	color: #a459d1;
 }
-
-/*구분선*/
 
 article.profile {
 	width: 45%;
@@ -70,18 +70,23 @@ article.profile .image {
 	text-align: left;
 }
 
+article.profile .image img {
+	width: 400px;
+	height: 400px;
+	margin-right: 30px;
+	border-radius: 10%;
+	box-shadow: 15px 5px 30px #cacaca;
+}
+
 article.profile .info {
 	width: 100%;
 	text-align: left;
 	align-self: center;
 }
 
-article.profile .image img {
-	width: 300px;
-	height: 300px;
-	margin-right: 30px;
-	border-radius: 10%;
-	box-shadow: 15px 5px 30px #cacaca;
+article.profile .info h2{
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #222;
 }
 
 article.profile ul#contact {
@@ -95,20 +100,29 @@ article.profile ul#contact li {
 	border-bottom: 1px solid #eee;
 }
 
+article.profile ul#contact li:nth-of-type(1){
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+article.profile ul#contact li:nth-of-type(4){
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
 article.profile ul#contact li:last-child {
 	border-bottom: none;
 }
 
 article.profile ul#contact li i {
-	width: 20%;
+	width: 10%;
 	text-align: center;
-	color: #707070;
+	color: #555;
 	font-size: 15px;
 }
 
 article.profile ul#contact li span {
-	font: normal 18px 'arial';
-	color: #888888;
+	font: medium 18px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: #555;
 	margin-bottom: 30px;
 }
 
@@ -116,21 +130,29 @@ article.card {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	width: 500px;
+	width: 650px;
 	background: #fff;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 15px 5px 30px #cacaca;
-	padding: 20px;
+	padding: 30px;
 	margin: 30px auto;
+}
+
+article.card:nth-of-type(1) {
+	margin-top: 70px;
 }
 
 article.card h2 {
 	font-size: 1.5rem;
-	font-family: 'Slackside One', cursive;
+	font-family: 'Montserrat Alternates', sans-serif;
 	color: #222;
 	margin: 0;
 }
 
 article.card p {
 	margin-top: 20px;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #555;
 }
+
