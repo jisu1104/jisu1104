@@ -1,0 +1,85 @@
+.profile {
+	width: 45%;
+	position: relative;
+	margin: 100px auto;
+	display: flex;
+}
+
+.profile .image {
+	width: 100%;
+	text-align: left;
+}
+
+.profile .image img {
+	width: 400px;
+	height: 400px;
+	margin-right: 30px;
+	border-radius: 10%;
+	box-shadow: 15px 5px 30px #cacaca;
+}
+
+.profile .info {
+	width: 100%;
+	text-align: left;
+	align-self: center;
+}
+
+.profile .info h2 {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #222;
+}
+
+.profile ul#contact {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.profile ul#contact li {
+	width: 100%;
+	padding: 5px 0px;
+	border-bottom: 1px solid #eee;
+}
+
+.profile ul#contact li:nth-of-type(1) {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.profile ul#contact li:nth-of-type(4) {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.profile ul#contact li:last-child {
+	border-bottom: none;
+}
+
+.profile ul#contact li i {
+	width: 10%;
+	text-align: center;
+	color: #555;
+	font-size: 15px;
+}
+
+.profile ul#contact li span {
+	font: medium 18px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: #555;
+	margin-bottom: 30px;
+}
+
+.card:nth-of-type(1) {
+	margin-top: 70px;
+}
+
+.card h2 {
+	font-size: 1.5rem;
+	font-family: 'Montserrat Alternates', sans-serif;
+	color: #222;
+	margin: 0;
+}
+
+.card p {
+	margin-top: 20px;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #555;
+}
